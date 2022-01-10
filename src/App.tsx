@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 
 import { SideBar } from './components/SideBar';
-import { Content } from './components/Content';
 
 import './styles/global.scss';
 
@@ -18,14 +17,6 @@ export function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
       <SideBar />
-
-      <div className="container">
-        <header>
-          <span className="category">Categoria:<span> {selectedGenre.title}</span></span>
-        </header>
-
-       <Content />
-      </div>
     </div>
   )
 }
